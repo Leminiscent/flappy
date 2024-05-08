@@ -1,8 +1,4 @@
 --[[
-	StateMachine Class
-	Author: Colton Ogden
-	cogden@cs50.harvard.edu
-
 	Code taken and edited from lessons in http://howtomakeanrpg.com
 
 	Usage:
@@ -35,7 +31,7 @@
 	straight forward.
 ]]
 
-StateMachine = Class{}
+StateMachine = Class {}
 
 function StateMachine:init(states)
 	self.empty = {

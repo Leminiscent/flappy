@@ -1,14 +1,9 @@
 --[[
-    PipePair Class
-
-    Author: Colton Ogden
-    cogden@cs50.harvard.edu
-
     Used to represent a pair of pipes that stick together as they scroll, providing an opening
     for the player to jump through in order to score a point.
 ]]
 
-PipePair = Class{}
+PipePair = Class {}
 
 -- size of the gap between pipes
 local GAP_HEIGHT = 90
