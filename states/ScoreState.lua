@@ -6,6 +6,10 @@
 
 ScoreState = Class { __includes = BaseState }
 
+local GOLD_IMAGE = love.graphics.newImage('gold.png')
+local SILVER_IMAGE = love.graphics.newImage('silver.png')
+local BRONZE_IMAGE = love.graphics.newImage('bronze.png')
+
 --[[
     When we enter the score state, we expect to receive the score
     from the play state so we know what to render to the State.
@@ -14,11 +18,11 @@ function ScoreState:enter(params)
     self.score = params.score
     -- Determine which medal to display
     if self.score >= 30 then
-        self.medal = love.graphics.newImage('gold.png')
+        self.medal = GOLD_IMAGE
     elseif self.score >= 20 then
-        self.medal = love.graphics.newImage('silver.png')
+        self.medal = SILVER_IMAGE
     elseif self.score >= 10 then
-        self.medal = love.graphics.newImage('bronze.png')
+        self.medal = BRONZE_IMAGE
     else
         self.medal = nil
     end
