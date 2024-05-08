@@ -1,14 +1,10 @@
 --[[
-    PlayState Class
-    Author: Colton Ogden
-    cogden@cs50.harvard.edu
-
     The PlayState class is the bulk of the game, where the player actually controls the bird and
     avoids pipes. When the player collides with a pipe, we should go to the GameOver state, where
     we then go back to the main menu.
 ]]
 
-PlayState = Class{__includes = BaseState}
+PlayState = Class { __includes = BaseState }
 
 PIPE_SPEED = 60
 PIPE_WIDTH = 70
@@ -36,7 +32,7 @@ function PlayState:update(dt)
         -- modify the last Y coordinate we placed so pipe gaps aren't too far apart
         -- no higher than 10 pixels below the top edge of the screen,
         -- and no lower than a gap length (90 pixels) from the bottom
-        local y = math.max(-PIPE_HEIGHT + 10, 
+        local y = math.max(-PIPE_HEIGHT + 10,
             math.min(self.lastY + math.random(-20, 20), VIRTUAL_HEIGHT - 90 - PIPE_HEIGHT))
         self.lastY = y
 

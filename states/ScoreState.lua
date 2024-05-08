@@ -1,14 +1,10 @@
 --[[
-    ScoreState Class
-    Author: Colton Ogden
-    cogden@cs50.harvard.edu
-
     A simple state used to display the player's score before they
     transition back into the play state. Transitioned to from the
     PlayState when they collide with a Pipe.
 ]]
 
-ScoreState = Class{__includes = BaseState}
+ScoreState = Class { __includes = BaseState }
 
 --[[
     When we enter the score state, we expect to receive the score
