@@ -126,7 +126,5 @@ end
 ]]
 function PlayState:exit()
     -- stop scrolling for the death/score screen
-    if not gStateMachine:isState('pause') then
-        scrolling = false
-    end
+    scrolling = false
 end
