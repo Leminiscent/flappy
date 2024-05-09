@@ -28,7 +28,6 @@ end
 function PlayState:update(dt)
     if love.keyboard.wasPressed('p') then
         self.isPaused = not self.isPaused
-        scrolling = not scrolling
     end
 
     if not self.isPaused then
