@@ -125,7 +125,3 @@ end
 function PlayState:enter()
     scrolling = true
 end
-
-function PlayState:exit()
-    scrolling = false
-end
