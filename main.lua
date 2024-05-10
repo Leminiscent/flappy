@@ -147,8 +147,6 @@ function love.mouse.wasPressed(button)
     return love.mouse.buttonsPressed[button]
 end
 
-scrolling = true
-
 function love.update(dt)
     if scrolling then
         -- scroll our background and ground, looping back to 0 after a certain amount

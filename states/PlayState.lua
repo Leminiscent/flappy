@@ -121,3 +121,7 @@ function PlayState:render()
 
     self.bird:render()
 end
+
+function PlayState:enter()
+    scrolling = true
+end
