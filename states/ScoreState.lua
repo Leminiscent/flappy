@@ -31,11 +31,3 @@ function ScoreState:render()
 
     love.graphics.printf('Press Enter to Play Again!', 0, 160, VIRTUAL_WIDTH, 'center')
 end
-
-function PlayState:enter()
-    scrolling = false
-end
-
-function PlayState:exit()
-    scrolling = true
-end

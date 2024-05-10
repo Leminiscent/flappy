@@ -5,8 +5,6 @@
 
 TitleScreenState = Class { __includes = BaseState }
 
-scrolling = true
-
 function TitleScreenState:update(dt)
     -- transition to countdown when enter/return are pressed
     if love.keyboard.wasPressed('enter') or love.keyboard.wasPressed('return') then
