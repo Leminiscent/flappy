@@ -40,3 +40,7 @@ function CountdownState:render()
     love.graphics.setFont(hugeFont)
     love.graphics.printf(tostring(self.count), 0, 120, VIRTUAL_WIDTH, 'center')
 end
+
+function PlayState:enter()
+    scrolling = true
+end

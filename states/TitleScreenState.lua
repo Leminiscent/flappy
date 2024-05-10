@@ -5,8 +5,6 @@
 
 TitleScreenState = Class { __includes = BaseState }
 
-scrolling = true
-
 function TitleScreenState:update(dt)
     -- transition to countdown when enter/return are pressed
     if love.keyboard.wasPressed('enter') or love.keyboard.wasPressed('return') then
@@ -21,4 +19,8 @@ function TitleScreenState:render()
 
     love.graphics.setFont(mediumFont)
     love.graphics.printf('Press Enter', 0, 100, VIRTUAL_WIDTH, 'center')
+end
+
+function PlayState:enter()
+    scrolling = true
 end
